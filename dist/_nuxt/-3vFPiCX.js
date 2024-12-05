@@ -1,0 +1,1 @@
+import{a6 as a}from"./XHRsKjHK.js";import{ab as d,S as r}from"./C5z8L6On.js";const c=d("todos",()=>{const t=a(),o=r({todos:[],todo_id:0});async function s(){const e=await t.get("todos");o.todos=e.data}return{store:o,getTodos:s}});export{c as u};

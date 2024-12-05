@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./colors.scss";
+// @import "./antdv.scss";
+
+// leaflet
+.leaflet-container .leaflet-control-attribution {
+    display: none !important;
+}
+
+.is_loading {
+    background: #ededed;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 12px;
+    background-size: 200% 100%;
+    animation: 1s loading_animation linear infinite;
+}
+
+@keyframes loading_animation {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+input,
+textarea,
+select {
+    min-height: 50px !important;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    border: 1px solid #cccccc;
+    padding: 12px !important;
+    outline: none !important;
+    resize: none !important;
+
+    ::placeholder {
+        color: color(cb3) !important;
+    }
+}
+
+.ant-select-selector {
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    .ant-select-selection-item {
+        padding-left: 12px !important;
+    }
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.fflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpall *{
+    cursor: pointer;    
+}
+
+.is_loading {
+    background: #ededed;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1s loading_animation linear infinite;
+  }
+  
+  @keyframes loading_animation {
+    to {
+      background-position-x: -200%;
+    }
+  }
